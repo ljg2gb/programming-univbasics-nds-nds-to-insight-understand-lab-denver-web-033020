@@ -10,7 +10,7 @@ def pretty_print_nds(nds)
   pp nds
 end
 
-def print_first_directors_movie_title
+def print_first_directors_movie_titles
    binding.pry
    
   # first_array
