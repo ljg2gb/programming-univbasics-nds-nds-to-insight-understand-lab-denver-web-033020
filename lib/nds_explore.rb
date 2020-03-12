@@ -6,16 +6,15 @@ require 'directors_database'
 
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
-  binding.pry
+  #binding.pry
   pp nds
 end
 
 def print_first_directors_movie_title
+   binding.pry
   # first_array
   row_index = 0
-    binding.pry
   while row_index < directors_database.length do
-    
     #first Hash
     column_index = 0
     column_len = directors_database[row_index].length
