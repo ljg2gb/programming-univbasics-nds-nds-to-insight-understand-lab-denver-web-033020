@@ -17,6 +17,7 @@ def print_first_directors_movie_titles
   movies = directors_database[0][:movies]
     while row_index < movies.length do
       binding.pry
+      puts 
     end
   # while row_index < directors_database.length do
     
