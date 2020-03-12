@@ -23,12 +23,12 @@ def print_first_directors_movie_title
       #inner Array
       inner_len = directors_database[row_index][:movies].length
       inner_index = 0
+      binding.pry
       while inner_index < inner_len do
         
         #inner Hash
         inner_inner_len = directors_database[row_index][:movies][inner_index]
         inner_inner_index = 0
-         binding.pry
         while inner_inner_index < inner_inner_len do
           title_name = directors_database[row_index][:movies][inner_index][:title]
           puts "#{title_name}\n"
