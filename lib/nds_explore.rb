@@ -12,9 +12,11 @@ end
 
 def print_first_directors_movie_title
    binding.pry
+   
   # first_array
   row_index = 0
   while row_index < directors_database.length do
+    
     #first Hash
     column_index = 0
     column_len = directors_database[row_index].length
