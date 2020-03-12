@@ -15,32 +15,32 @@ def print_first_directors_movie_title
    
   # first_array
   row_index = 0
-  while row_index < directors_database.length do
+  # while row_index < directors_database.length do
     
-    #first Hash
-    column_index = 0
-    column_len = directors_database[row_index].length
-    while column_index < column_len do
+  #   #first Hash
+  #   column_index = 0
+  #   column_len = directors_database[row_index].length
+  #   while column_index < column_len do
       
-      #inner Array
-      inner_len = directors_database[row_index][:movies].length
-      inner_index = 0
-      while inner_index < inner_len do
+  #     #inner Array
+  #     inner_len = directors_database[row_index][:movies].length
+  #     inner_index = 0
+  #     while inner_index < inner_len do
         
-        #inner Hash
-        inner_inner_len = directors_database[row_index][:movies][inner_index]
-        inner_inner_index = 0
-        while inner_inner_index < inner_inner_len do
-          title_name = directors_database[row_index][:movies][inner_index][:title]
-          puts "#{title_name}\n"
-          inner_inner_index += 1
-        end
+  #       #inner Hash
+  #       inner_inner_len = directors_database[row_index][:movies][inner_index]
+  #       inner_inner_index = 0
+  #       while inner_inner_index < inner_inner_len do
+  #         title_name = directors_database[row_index][:movies][inner_index][:title]
+  #         puts "#{title_name}\n"
+  #         inner_inner_index += 1
+  #       end
         
-        inner_index += 1
-      end
+  #       inner_index += 1
+  #     end
  
-      column_index += 1
-    end
+  #     column_index += 1
+  #   end
  
     row_index += 1
   end
