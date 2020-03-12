@@ -6,12 +6,11 @@ require 'directors_database'
 
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
-  #binding.pry
+  binding.pry
   pp nds
 end
 
-def print_first_directors_movie_titles
-  #binding.pry
+def print_first_directors_movie_title
   # first_array
   row_index = 0
   while row_index < directors_database.length do
@@ -30,6 +29,7 @@ def print_first_directors_movie_titles
         inner_inner_len = directors_database[row_index][:movies][inner_index]
         inner_inner_index = 0
         while inner_inner_index < inner_inner_len do
+            binding.pry
           title_name = directors_database[row_index][:movies][inner_index][:title]
           puts "#{title_name}\n"
           inner_inner_index += 1
