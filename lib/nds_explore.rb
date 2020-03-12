@@ -13,12 +13,12 @@ end
 def print_first_directors_movie_title
   # first_array
   row_index = 0
+    binding.pry
   while row_index < directors_database.length do
     
     #first Hash
     column_index = 0
     column_len = directors_database[row_index].length
-    binding.pry
     while column_index < column_len do
       
       #inner Array
