@@ -28,8 +28,8 @@ def print_first_directors_movie_title
         #inner Hash
         inner_inner_len = directors_database[row_index][:movies][inner_index]
         inner_inner_index = 0
+         binding.pry
         while inner_inner_index < inner_inner_len do
-            binding.pry
           title_name = directors_database[row_index][:movies][inner_index][:title]
           puts "#{title_name}\n"
           inner_inner_index += 1
