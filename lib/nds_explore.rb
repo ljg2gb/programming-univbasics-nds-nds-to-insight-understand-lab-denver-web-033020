@@ -30,7 +30,8 @@ def print_first_directors_movie_titles
         inner_inner_len = directors_database[row_index][:movies][inner_index]
         inner_inner_index = 0
         while inner_inner_index < inner_inner_len do
-          puts "#{directors_database[row_index][:movies][inner_index][:title]}\n"
+          title_name = directors_database[row_index][:movies][inner_index][:title]
+          puts "#{title_name}\n"
           inner_inner_index += 1
         end
         
